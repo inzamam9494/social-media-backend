@@ -23,7 +23,7 @@ router.route("/register").post(
 
 router.route("/login").post(loginUser)
 
-//secure routes
+//secure routes and check the git
 router.route("/logout").post(verifyJWT,logoutUser)
 router.route("/refresh-token").post(refreshAccessToken)
   
